@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    * {box-sizing: border-box;}
+
+    .logo img {
+        height: 50px; 
+        width: auto;
+        vertical-align: middle;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0 ;
+        display: flex;
+        border: 1px solid ;
+        background-color: #292929;
+    }
+
+    ul li a {
+        display: block;
+        color: #ddb3ae;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    ul li a:hover {
+        transition: all 0.6s ease;
+        background-color: #292929a4;
+        color: #2370a1;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        background-color: #292929;
+        }
+
+.poster-container {
+        position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 2%;
+
+}
+.poster {
+  flex: 1 1 25%; /* هر پوستر حداقل 200px باشه */
+  max-width: 15%; /* حداکثر اندازه هر پوستر */
+  transition: transform 0.3s ease;
+  margin: 2%;
+}
+.poster img {
+  width: 100%; 
+  height: auto;
+  border-radius: 5%;
+  display: block;
+  margin: 3%;
+}
+    .poster:hover {
+        transform: scale(1.2);
+    }
+
+.overlay {
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  right: 3%;
+  background: #494949c2;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  padding: 5%;
+  border-radius: 5%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.poster:hover .overlay {
+  opacity: 1;
+}
+</style>
+
+</head>
+<body>
+ <!--  <h2>Image Overlay Title</h2>
+<p>Hover over the image to see the effect.</p>
+
+<div class="container">
+    <a href="film40.html">
+        <img src="poster40.jpg" alt="Avatar" class="image">
+        <div class="overlay" >  متری شیش و نیم </div>
+    </a>
+
+</div>
+ --> 
+    <ul>
+        <li class="nav logo">
+            <img src="logo.png" alt="لوگو">
+        </li>
+        <li class="nav"><a href="index.html">خانه</a></li>
+        <li class="nav"><a href="film.html">فیلم</a></li>
+        <li class="nav"><a href="serial.html">سریال</a></li>
+        <li class="nav"><a href="persain.html">ایرانی</a></li>
+        <li class="nav"><a href="world.html">خارجی</a></li>
+        
+    </ul>
+    <div class="poster-container">
+        <a class="poster" href="film1.html">
+            <img src="poster1.jpg" alt="Film 1 Poster">
+            ​<div class="overlay"> دونده هزارتو </div>
+        </a>
+        <a class="poster" href="film2.html">
+            <img src="poster2.jpg" alt="Film 2 Poster">
+            ​<div class="overlay"> جومانجی </div>
+        </a>
+        <a class="poster" href="film3.html">
+            <img src="poster3.jpg" alt="Film 3 Poster">
+            ​<div class="overlay">  سیکاریو   </div>
+        </a>
+        <a class="poster" href="film4.html">
+            <img src="poster4.jpg" alt="Film 1 Poster">
+            ​<div class="overlay"> گامبی وزیر  </div>
+        </a>
+        <a class="poster" href="film5.html">
+            <img src="poster5.jpg" alt="Film 2 Poster">
+            ​<div class="overlay"> جستجو </div>
+        </a>
+        <a class="poster" href="film6.html">
+            <img src="poster6.jpg" alt="Film 3 Poster">
+            ​<div class="overlay">   استخراج  </div>
+        </a>
+        <a class="poster" href="film7.html">
+            <img src="poster7.jpg" alt="Film 1 Poster">
+            ​<div class="overlay">  ملاقات خصوصی </div>
+        </a>
+        <a class="poster" href="film8.html">
+            <img src="poster8.jpg" alt="Film 2 Poster">
+            ​<div class="overlay">   عامه پسند </div>
+        </a>
+        <a class="poster" href="film9.html">
+            <img src="poster9.jpg" alt="Film 3 Poster">
+            ​<div class="overlay">   جهان با من برقص  </div>
+        </a>
+        <a class="poster" href="film10.html">
+            <img src="poster10.jpg" alt="Film 1 Poster">
+            ​<div class="overlay"> یاغی  </div>
+        </a>
+        <a class="poster" href="film11.html">
+            <img src="poster11.jpg" alt="Film 2 Poster">
+            ​<div class="overlay"> مغز های کوچک زنگ زده   </div>
+        </a>
+        <a class="poster" href="film12.html">
+            <img src="poster12.jpg" alt="Film 3 Poster">
+            ​<div class="overlay">  سرخ پوست  </div>
+        </a>
+        <a class="poster" href="film13.html">
+            <img src="poster13.jpg" alt="Film 3 Poster">
+            ​<div class="overlay">  عنکبوت   </div>
+        </a>
+        <a class="poster" href="film14.html">
+            <img src="poster14.jpg" alt="Film 1 Poster">
+            ​<div class="overlay"> مرد عینکی  </div>
+        </a>
+        <a class="poster" href="film15.html">
+            <img src="poster15.jpg" alt="Film 2 Poster">
+            ​<div class="overlay"> هفتاد سی   </div>
+        </a>
+        <a class="poster" href="film16.html">
+            <img src="poster16.jpg" alt="Film 3 Poster">
+            ​<div class="overlay"> متری شش و نیم    </div>
+        </a>
+        <a class="poster" href="film17.html">
+            <img src="poster17.jpg" alt="Film 3 Poster">
+            ​<div class="overlay"> شبی که ماه کامل شد    </div>
+        </a>
+        <a class="poster" href="film18.html">
+            <img src="poster18.jpg" alt="Film 1 Poster">
+            ​<div class="overlay"> درباره الی  </div>
+        </a>
+        <a class="poster" href="film19.html">
+            <img src="poster19.jpg" alt="Film 2 Poster">
+            ​<div class="overlay"> Wednesday </div>
+        </a>
+        <a class="poster" href="film20.html">
+            <img src="poster20.jpg" alt="Film 3 Poster">
+            ​<div class="overlay"> شهرزاد    </div>
+        </a>
+            <a class="poster" href="film21.html">
+            <img src="poster21.jpg" alt="Film 2 Poster">
+            ​<div class="overlay"> Monifest </div>
+        </a>
+        <a class="poster" href="film22.html">
+            <img src="poster22.jpg" alt="Film 3 Poster">
+            ​<div class="overlay">  سرخ پوست  </div>
+        </a>
+        <a class="poster" href="film23.html">
+            <img src="poster23.jpg" alt="Film 3 Poster">
+            ​<div class="overlay">  عنکبوت   </div>
+        </a>
+        <a class="poster" href="film24.html">
+            <img src="poster24.jpg" alt="Film 1 Poster">
+            ​<div class="overlay"> The Last of Us </div>
+        </a>
+    </div>    
+
+
+</body>
+</html>
